@@ -1,0 +1,51 @@
+---
+title: Mspase | Начало
+layout: 'base.njk'
+---
+
+<!-- Section Main-Container-->
+<section
+    id="main-container" class="container-fluid">
+    <!-- Title  -->
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <h2 class="text-uppercase">Последни Новини и Публикации</h2>
+            </div>
+            <div class="col-sm-12">
+                <div class="hr-1 mx-auto"><hr>
+                </div>
+                <p>интересни новини и истории от България и света, свободни мнения, лайфстайл, сериали, филми, субтитри, технологии,
+                    наука, програмиране</p>
+                <div class="empty_space_40"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Title  -->
+    <!-- Block 2 column  -->
+    <div class="container">
+        <div
+            class="row">
+            <!-- Column Blog Posts -->
+            <div
+                class="col-md-8">
+                <!-- Blog-Item - 1 -->
+                {%- for post in collections.published | reverse -%}
+                        {% include 'blog-card.njk' %}
+                {%- endfor -%}
+                <!-- End of Blog-Item - 1 -->
+                <div class="empty_space_40"></div>
+            </div>
+            <!-- End of Column Blog Posts -->
+
+            <!-- Column Side Bar -->
+            <div class="col-md-4 d-none d-md-block">
+                {% include 'sidebar-categories.njk' %}
+            </div>
+            <!-- End Column Side Bar -->
+        </div>
+    </div>
+    <!-- Block 2 column  -->
+</section>
+<!-- End of Section -->
+<div class="empty_space_40"></div>

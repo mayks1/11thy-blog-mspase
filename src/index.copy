@@ -1,0 +1,92 @@
+---
+title: Начало
+layout: 'base.njk'
+---
+<!-- Section Main-Container-->
+<section id="main-container" class="container-fluid">
+    <div class="row row_content">
+        
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div id="card-style" class="card p-3">
+            <a href="bw-photography/bw-photography.html" title="Ч/Б фотография"><img class="card-img-top" src="/assets/images/img1-280x400.jpg"
+            alt="Ч/Б фотография"></a>
+                <div class="card-body">
+                    <h6 class="card-title">Ч/Б фотография</h6>
+                    <p class="card-text font-weight-light">Колекция / Фотография</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div id="card-style" class="card p-3">
+            <a href="diner-out/diner-out.html" title="Вечеря навън"><img class="card-img-top" src="/assets/images/img2-280x400.jpg" alt="Вечеря навън"></a>
+                <div class="card-body">
+                    <h6 class="card-title">Вечеря навън</h6>
+                    <p class="card-text font-weight-light">Колекция / Фотография</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div id="card-style" class="card p-3">
+            <a href="fashion/fashion.html" title="Модна фотография"><img class=" card-img-top" src="/assets/images/img3-280x400.jpg" alt="Модна фотография"></a>
+                <div class="card-body">
+                    <h6 class="card-title">Модна фотография</h6>
+                    <p class="card-text font-weight-light">Колекция / Фотография</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div id="card-style" class="card p-3">
+            <a href="summer/summer.html" title="Лято"> <img class="card-img-top" src="/assets/images/img4-280x400.jpg" alt="Лято"></a>
+                <div class="card-body">
+                    <h6 class="card-title">Лято</h6>
+                    <p class="card-text font-weight-light">Колекция / Фотография</p>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="row row_content">
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div id="card-style" class="card p-3">
+            <a href="mountains/mountains.html"> <img class="card-img-top" src="/assets/images/img5-280x400.jpg" alt="Планини"></a>
+                <div class="card-body">
+                    <h6 class="card-title">Планини</h6>
+                    <p class="card-text font-weight-light">Колекция / Фотография</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div id="card-style" class="card p-3">
+            <a href="nature/nature.html"><img class="card-img-top" src="/assets/images/img6-280x400.jpg" alt="Природа"></a>
+                <div class="card-body">
+                    <h6 class="card-title">Природа</h6>
+                    <p class="card-text font-weight-light">Колекция / Фотография</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div id="card-style" class="card p-3">
+                <a href="ocean/ocean.html"><img class="card-img-top" src="/assets/images/img7-280x400.jpg" alt="Океан"></a>
+                <div class="card-body">
+                    <h6 class="card-title">Океан</h6>
+                    <p class="card-text font-weight-light">Колекция / Фотография</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div id="card-style" class="card p-3">
+            <a href="urban/urban.html"><img class="card-img-top" src="/assets/images/img8-280x400.jpg" alt="Улична фотография"></a>
+                <div class="card-body">
+                    <h6 class="card-title">Улична фотография</h6>
+                    <p class="card-text font-weight-light">Колекция / Фотография</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End of Main-Container -->

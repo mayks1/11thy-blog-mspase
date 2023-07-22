@@ -1,0 +1,8 @@
+<ul class="list-group list-unstyled">
+    <p class="list-group-item text-uppercase">Категории</p>
+    {%- for category in collections.category -%}
+        <li>
+            <a href="{{ category.url }}" class="list-group-item list-group-item-action">{{ category.data.name }}</a>
+        </li>
+    {%- endfor -%}
+</ul>
