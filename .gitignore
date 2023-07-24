@@ -2,6 +2,7 @@
 node_modules
 
 # build artefacts
+docs
 public
 css
 
