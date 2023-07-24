@@ -13,11 +13,10 @@ layout: 'base.njk'
 
                 {{ content | safe }}
 
-                <ul class="author-date text-left">
-                    <li>
-                        <img src="/assets/images/icon-12.png" alt="icon"><span>{{ date | postDate }}</span>
-                    </li>
-                </ul>
+                <div class="my-3">
+                    <img class="mr-3" src="/assets/images/icon-12.png" alt="icon">
+                    <span>{{ date | postDate }}</span>
+                </div>
             </article>
             <!-- Column Side Bar -->
             <div class="col-lg-4 d-none d-lg-block">

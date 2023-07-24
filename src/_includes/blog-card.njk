@@ -17,11 +17,10 @@
                 <h5 class="h3">
                     <a href="{{ post.url }}">{{ post.data.title }}</a>
                 </h5>
-                <ul class="author-date text-left">
-                    <li>
-                        <img src="/assets/images/icon-12.png" alt="icon"><span>{{ post.data.date | postDate }}</span>
-                    </li>
-                </ul>
+                <div class="my-3">
+                    <img class="mr-2" src="/assets/images/icon-12.png" alt="Date icon">
+                    <span>{{ post.data.date | postDate }}</span>
+                </div>
                 <div class="simple-text sm text-justify">
                     <p>{{ post.data.description }}</p>
                 </div>
