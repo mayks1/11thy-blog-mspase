@@ -29,7 +29,7 @@ permalink: /
             class="row">
             <!-- Column Blog Posts -->
             <div
-                class="col-md-8">
+                class="col-md-8 my-3">
                 <!-- Blog-Item - 1 -->
                 {%- for post in collections.publishedPosts | reverse -%}
                         {% include 'blog-card.njk' %}
@@ -40,7 +40,7 @@ permalink: /
             <!-- End of Column Blog Posts -->
 
             <!-- Column Side Bar -->
-            <div class="col-md-4 d-none d-md-block">
+            <div class="col-md-4 d-md-block my-3">
                 {% include 'sidebar-categories.njk' %}
             </div>
             <!-- End Column Side Bar -->

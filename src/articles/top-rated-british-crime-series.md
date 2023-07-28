@@ -7,7 +7,6 @@ lang: en
 tags:
   - филми
   - сериали
-  - draft
 number: 15
 date: 2023-06-15
 ---
