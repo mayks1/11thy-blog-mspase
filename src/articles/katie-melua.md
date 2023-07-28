@@ -2,13 +2,11 @@
 title: Katie Melua - Georgian-British singer and songwriter
 description: Ketevan "Katie" Melua is a Georgian-British singer and songwriter. She moved to the United Kingdom at the age of eight.
 image: https://res.cloudinary.com/mayks/image/upload/v1653989841/blog-mayks/posts/kati-melua/kati-melua-poster_dkfsjz.webp
-categories:
+tags:
   - музика
 alt: Katie Melua
-tags: ["музика", "published"]
 number: 6
 date: 2022-05-31
-status: publish
 ---
 #### Katie Melua
 In November 2003, at the age of 19, Melua released her first album, _[Call Off the Search](https://en.wikipedia.org/wiki/Call_Off_the_Search "Call Off the Search")_, which reached the top of the United Kingdom album charts and sold 1.8 million copies in its first five months of release.

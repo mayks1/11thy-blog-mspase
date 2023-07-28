@@ -3,13 +3,11 @@ title: The Black Dahlia / Черната Далия - Неразкритият �
 description: Историята и фактите за убийството на Черната Далия, нова информация и подробности за неразкрития случай от преди век. Нова информация по случая.
 image: https://res.cloudinary.com/mayks/image/upload/v1653921275/blog-mayks/crime/black-dahlia%20/elizabeth-short-face-1_y9wpm0.webp
 alt: The Black Dahlia picture in enface
-categories:
+tags:
   - крими
   - история
-tags: ["крими", "published"]
 number: 4
 date: 2022-05-30
-status: ["publish"]
 ---
 
 ## The Black Dahlia / Черната Далия - Elizabeth Short   

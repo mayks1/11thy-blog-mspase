@@ -6,14 +6,12 @@ alt: Постер на сериала The Old Man
 imdb: https://www.imdb.com/title/tt5645432/
 subs: http://mayks.bg.cm/subtitles/the-old-man/
 rating: 8.6 / 10
-categories:
+tags:
   - филми
   - сериал
   - трилър
-tags: ["филми", "published"]
 number: 13
 date: 2022-06-18
-status: publish
 ---
 
 ## Двамата наградени актьори никога не са работили заедно, преди да се появи този замислен от FX трилър. Кой да знае, че пътуването ще стане толкова екзистенциално?  

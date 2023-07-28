@@ -6,13 +6,11 @@ alt: Постер на сериала Sherwood
 imdb: https://www.imdb.com/title/tt13994572/
 subs: http://mayks.bg.cm/subtitles/sherwood/Sherwood.S01E01.1080p.HDTV.H264-ORGANiC.zip
 rating: 7.9 / 10
-categories:
+tags:
   - филми
   - трилър
-tags: ["филми", "published"]
 number: 11
 date: 2022-06-14
-status: publish
 ---
 
 ## Новият трилър сериал на BBC, Sherwood проследява трагичните и неочаквани убийства в Sherwood - една разбита миньорска общност.

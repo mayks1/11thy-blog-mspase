@@ -6,14 +6,12 @@ alt: Джесика Бийл в Сериала Candy
 imdb: https://www.imdb.com/title/tt13729648/
 subs: http://mayks.bg.cm/subtitles/candy/Candy%20S01%20Complete%20Season%201%201080p%20WEBRip%20AAC5.1%20x264-HODL.zip
 rating: 7.3 / 10
-categories:
+tags:
   - филми
   - сериали
   - крими
-tags: ["филми", "published"]
 number: 7
 date: 2022-06-01
-status: publish
 ---
 
 ## Candy е американска биографична криминална драма, създаденa от Ник Антоска и Робин Вейт.

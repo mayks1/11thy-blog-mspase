@@ -6,14 +6,12 @@ alt: Постер на сериала The Old Man
 imdb: https://www.imdb.com/title/tt22746676/
 subs: http://www.mayks.bg.cm/subtitles/Emanuela.Orlandi/
 rating: 7.1 / 10
-categories:
+tags:
   - филми
   - сериал
   - документален
-tags: ["филми", "published"]
 number: 14
 date: 2023-03-21
-status: publish
 ---
 
 ## Един от най-очарователните аспекти на документалния филм е начинът, по който изследва пресечната точка на религия и политика.

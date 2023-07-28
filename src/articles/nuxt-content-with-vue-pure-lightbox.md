@@ -4,15 +4,13 @@ description: This article is about how to add vue-pure-lightbox plugin in our Nu
 image: https://res.cloudinary.com/mayks/image/upload/v1654661577/blog-mayks/posts/vue-pure-lightbox/nuxt-content-cover_awnedb.jpg
 alt: Nuxt Content with vue-pure-lightbox
 lang: en
-categories:
+tags:
   - programming
   - code
   - nuxt
   - vue
-tags: ["programming", "published"]
 number: 10
 date: 2022-06-08
-status: publish
 ---
 ## Adding Vue Plugin [vue-pure-lightbox](https://github.com/DCzajkowski/vue-pure-lightbox) in Nuxt Conten markdown file
 

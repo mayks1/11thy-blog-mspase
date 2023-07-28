@@ -9,12 +9,10 @@ rating: 5.5 / 10
 categories:
   - филми
   - сериали
-  - фантастика,
+  - фантастика
   - мистерия
-tags: ["филми", "published"]
 number: 8
 date: 2022-06-03
-status: publish
 ---
 
 <div class="video">

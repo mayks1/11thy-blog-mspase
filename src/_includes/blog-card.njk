@@ -8,8 +8,10 @@
                     <a href="#"><span>56</span><i class="far fa-heart"></i></a>
                     <a href="#"><span>7</span><i class="far fa-comments"></i></a>
                 </div> #}
-                <div class="blog-cat">
-                    <a href="#">{{ post.data.tags[1] }}</a>
+                <div class="blog-cat my-2">
+                    {% for category in post.data.tags %}
+                        <a class="badge badge-secondary" href="/category/{{category | slugify }}">{{ category }}</a>
+                    {% endfor %}
                 </div>
             </div>
             <div class="text">

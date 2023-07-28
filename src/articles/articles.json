@@ -1,4 +1,5 @@
 {
+    "permalink": "articles/{{ title | slug }}/",
     "layout": "article.njk",
     "tags": "post" 
 }

@@ -6,11 +6,10 @@ alt: Постер на филма Row 19 (2021)
 imdb: https://www.imdb.com/title/tt12036270
 subs: http://mayks.bg.cm/subtitles/row-19/Row.19.2022.1080p.WEB-DL.DD5.1.H.264-EVO.zip
 rating: 4.5 / 10
-categories:
+tags:
   - филми
   - ужаси
   - трилър
-tags: ["филми", "published"]
 number: 9
 date: 2022-06-05
 status: publish

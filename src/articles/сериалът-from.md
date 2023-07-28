@@ -6,14 +6,12 @@ alt: Сериалът - From - мистерията на един кошмаре
 imdb: https://www.imdb.com/title/tt9813792/?ref_=ext_shr_lnk
 subs: http://mayks.bg.cm/subtitles/from/From.S01.COMPLETE.720p.AMZN_.WEBRip.x264-GalaxyTVTGx.zip
 rating: 7.6 / 10
-categories:
+tags:
   - филми
   - сериали
   - ужаси
-tags: ["филми", "published"]
 number: 2
 date: 2022-05-27
-status: publish
 ---
 
 ## Сериалът - From - е един от най добрите сериали за 2022 г.

@@ -2,13 +2,11 @@
 title:  Caitlin Koch  - American Beauty
 description: Кейтлин Кох е американска певица и автор на песни, която е известна с красивия си глас и таланта си да преобразува песни в уникален стил.
 image: https://res.cloudinary.com/mayks/image/upload/v1653989841/blog-mayks/posts/kati-melua/kati-melua-poster_dkfsjz.webp
-categories:
+tags:
   - музика
 alt: Caitlin Koch
-tags: ["музика", "published"]
 number: 15
 date: 2023-04-05
-status: publish
 ---
 #### Caitlin Koch
 През 2019 г. тя изненада своите фенове с кавър на една от най-иконичните песни на групата Radiohead - "Creep".

@@ -6,14 +6,12 @@ alt: сериал La Foret – Гората
 imdb: https://www.imdb.com/title/tt6560040/?ref_=ext_shr_lnk
 subs: http://mayks.bg.cm/subtitles/la-foret/La-foret-S01.zip
 rating: 7.2 / 10
-categories:
+tags:
   - филми
   - сериали
   - криминален
-tags: ["филми", "published"]
 number:
 date: 2022-05-25
-status: publish
 ---
 
 ## Френски криминален сериал

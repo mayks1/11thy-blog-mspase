@@ -4,13 +4,10 @@ description: Caitlin Koch is a Nashville - based Retro Soul artist, singer & son
 lang: en
 image: https://res.cloudinary.com/mayks/image/upload/v1653949812/blog-mayks/posts/caitlin-koch/catlin-face_lxfxf7.webp
 alt: Caitlin Koch
-categories:
+tags:
   - музика
-tags: ["музика", "published"]
-
 number: 7
 date: 2022-05-31
-status: publish
 ---
 ## It's like meeting on a train platform, a miracle?
 

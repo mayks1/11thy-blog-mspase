@@ -1,6 +1,7 @@
 ---
 title: Mspase | Начало
 layout: 'base.njk'
+permalink: /
 ---
 
 <!-- Section Main-Container-->
@@ -30,7 +31,7 @@ layout: 'base.njk'
             <div
                 class="col-md-8">
                 <!-- Blog-Item - 1 -->
-                {%- for post in collections.published | reverse -%}
+                {%- for post in collections.publishedPosts | reverse -%}
                         {% include 'blog-card.njk' %}
                 {%- endfor -%}
                 <!-- End of Blog-Item - 1 -->
