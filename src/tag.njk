@@ -10,7 +10,7 @@ eleventyComputed:
   title: Статии в категория - "{{ tag }}"
 ---
 
-<h1>Posts with category - {{ tag }}</h1>
+<h1>{{ title }}</h1>
 
 {% for post in collections[tag] %}
   <li>

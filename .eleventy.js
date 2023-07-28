@@ -12,9 +12,12 @@ module.exports = function(eleventyConfig) {
     // })
 
     eleventyConfig.addCollection('publishedPosts', (collectionApi) => {
-        const posts = collectionApi
+        let posts = collectionApi
             .getFilteredByTag("post")
             .filter(p => !p.data.tags.includes("draft"))
+            
+        // Remove "post" from tags array
+        posts.forEach(post => post.data.tags.shift())
 
         return posts
     })
