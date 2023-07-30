@@ -1,7 +1,12 @@
 ---
 title: Mspase | Начало
 layout: 'base.njk'
-permalink: /
+pagination:
+    data: collections.publishedPosts
+    size: 6
+    reverse: true
+    alias: posts
+permalink: "{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 ---
 
 <!-- Section Main-Container-->
@@ -31,11 +36,51 @@ permalink: /
             <div
                 class="col-md-8 my-3">
                 <!-- Blog-Item - 1 -->
-                {%- for post in collections.publishedPosts | reverse -%}
+                {%- for post in posts -%}
                         {% include 'blog-card.njk' %}
                 {%- endfor -%}
                 <!-- End of Blog-Item - 1 -->
                 <div class="empty_space_40"></div>
+
+                {# Pagination #}
+
+                <nav aria-label="Page pagination">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            {% if pagination.href.previous %}
+                                <a class="page-link" href="{{ pagination.href.previous }}" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    <span class="sr-only">Предишна страница</span>
+                                </a>
+                            {% endif %}
+                        </li>
+
+                        {%- for pageEntry in pagination.pages %}
+                            <li 
+                                class="
+                                    page-item
+                                    {% if page.url == pagination.hrefs[ loop.index0 ] %} 
+                                        active
+                                    {% endif %}
+                                "
+                            >
+                                <a class="page-link" href="{{ pagination.hrefs[ loop.index0 ] }}">
+                                    {{ loop.index }}
+                                </a>
+                            </li>
+                        {%- endfor %}
+                        
+                        <li class="page-item">
+                            {% if pagination.href.next %}
+                                <a class="page-link" href="{{ pagination.href.next }}" aria-label="следваща">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    <span class="sr-only">Следваща страница</span>
+                                </a>
+                            {% endif %}
+                        </li>
+                    </ul>
+                </nav>
+                {# Pagination end #}
             </div>
             <!-- End of Column Blog Posts -->
 
