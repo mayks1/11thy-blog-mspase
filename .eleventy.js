@@ -3,10 +3,9 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
 
 module.exports = function(eleventyConfig) {
 
-    eleventyConfig.addPassthroughCopy('./src/assets/css')
     eleventyConfig.addPassthroughCopy('./src/assets/images')
     eleventyConfig.addPassthroughCopy('./src/assets/blog')
-    eleventyConfig.addPassthroughCopy('./src/assets/css/pico')
+    eleventyConfig.addPassthroughCopy('./src/css/pico')
     // eleventyConfig.addCollection('post', function(collectionApi) {
     //     return collectionApi.getFilteredByGlob('src/articles/**/*.md')
     // })
