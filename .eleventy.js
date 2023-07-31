@@ -5,7 +5,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy('./src/assets/images')
     eleventyConfig.addPassthroughCopy('./src/assets/blog')
-    eleventyConfig.addPassthroughCopy('./node_modules/@picocss/pico/css/pico.css')
+    eleventyConfig.addPassthroughCopy('./src/css/pico.css')
     // eleventyConfig.addCollection('post', function(collectionApi) {
     //     return collectionApi.getFilteredByGlob('src/articles/**/*.md')
     // })
