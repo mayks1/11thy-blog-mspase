@@ -1,0 +1,30 @@
+@import "pico.css"; /* Using a string */
+
+/* @import url("pico.css"); */
+
+:root {
+    --primary: #f4511e;
+}
+
+.date-icon {
+    margin-right: 0.5rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
+
+.badge-secondary {
+    color: #fff;
+    background-color: var(--primary);
+}

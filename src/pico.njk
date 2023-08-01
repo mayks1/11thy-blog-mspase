@@ -13,7 +13,7 @@ layout: 'pico.njk'
         <ul>
             <li><a href="/about">За Мен</a></li>
             <li><a href="/contact">Контакт</a></li>
-            <li><a href="#" role="button">Блог</a></li>
+            <li><a href="#" class="small" role="button">Блог</a></li>
         </ul>
     </nav>
 </header>
@@ -35,9 +35,9 @@ layout: 'pico.njk'
       </header>
           <a href="{{ post.url }}"><img class="img-fluid" src="{{ post.data.image }}" alt="{{ post.data.alt }}">
           </a>
-          <div class="blog-cat my-2">
+          <div class="blog-cat">
               {% for category in post.data.tags %}
-                  <a class="badge badge-secondary" href="/category/{{category | slugify }}">{{ category }}</a>
+                  <a class="badge badge-secondary"  href="/category/{{category | slugify }}">{{ category }}</a>
               {% endfor %}
           </div>
       </div>
@@ -45,7 +45,7 @@ layout: 'pico.njk'
           <div class="empty_space_20"></div>
           
           <div class="my-3">
-              <img class="mr-2" src="/assets/images/icon-12.png" alt="Date icon">
+              <img class="date-icon" src="/assets/images/icon-12.png" alt="Date icon">
               <span>{{ post.data.date | postDate }}</span>
           </div>
       </div>
