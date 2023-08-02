@@ -1,5 +1,6 @@
 const { DateTime } = require('luxon')
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
+const purgeCssPlugin = require("eleventy-plugin-purgecss")
 
 module.exports = function(eleventyConfig) {
 
@@ -21,6 +22,14 @@ module.exports = function(eleventyConfig) {
 
         return posts
     })
+
+    eleventyConfig.addPlugin(purgeCssPlugin, {
+        // Optional: Specify the location of your PurgeCSS config
+        config: "./purgecss.config.js",
+    
+        // Optional: Set quiet: true to suppress terminal output
+        quiet: false,
+      })
     
     eleventyConfig.addPlugin(syntaxHighlight)
 
