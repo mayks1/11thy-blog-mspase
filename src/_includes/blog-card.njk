@@ -1,34 +1,28 @@
-<ul role="list" class="list-unstyled">
-    <li class="list-group-item">
-        <article>
-            <div class="image">
-                <a href="{{ post.url }}"><img class="img-fluid" src="{{ post.data.image }}" alt="{{ post.data.alt }}">
-                </a>
-                {# <div class="blog-link">
-                    <a href="#"><span>56</span><i class="far fa-heart"></i></a>
-                    <a href="#"><span>7</span><i class="far fa-comments"></i></a>
-                </div> #}
-                <div class="blog-cat my-2">
-                    {% for category in post.data.tags %}
-                        <a class="badge badge-secondary" href="/category/{{category | slugify }}">{{ category }}</a>
-                    {% endfor %}
-                </div>
+<article>
+    <div class="image">
+        <header>
+            <h2>
+                <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </h2>
+        </header>
+            <a href="{{ post.url }}">
+            <img src="{{ post.data.image }}" alt="{{ post.data.alt }}"></a>
+            <div>
+                {% for category in post.data.tags %}
+                    <a class="badge badge-secondary" href="/category/{{ category | slugify }}">{{ category }}</a>
+                {% endfor %}
             </div>
-            <div class="text">
-                <div class="empty_space_20"></div>
-                <h5 class="h3">
-                    <a href="{{ post.url }}">{{ post.data.title }}</a>
-                </h5>
-                <div class="my-3">
-                    {# <img class="mr-2" src="/assets/images/icon-12.png" alt="Date icon"> #}
-                    <img class="mr-2" src="/assets/images/svg/calendar-outline.svg" alt="Date icon">
-                    <span>{{ post.data.date | postDate }}</span>
-                </div>
-                <div class="simple-text sm text-justify">
-                    <p>{{ post.data.description }}</p>
-                </div>
+        </div>
+        <div>
+            <div class="date">
+                <span class="date-icon"></span>
+                <span>{{ post.data.date | postDate }}</span>
             </div>
-            <a href="{{ post.url }}" class="btn btn-secondary">Продължи да четеш</a>
-        </article>
-    </li>
-</ul>
+        </div>
+    <footer>
+        <div>
+            <p>{{ post.data.description }}</p>
+        </div>
+        <a href="{{ post.url }}" role="button">Продължи да четеш</a>
+    </footer>
+</article>

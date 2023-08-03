@@ -4,10 +4,11 @@ const purgeCssPlugin = require("eleventy-plugin-purgecss")
 
 module.exports = function(eleventyConfig) {
 
-    eleventyConfig.addPassthroughCopy("utils")
     eleventyConfig.addPassthroughCopy('./src/assets/images')
     eleventyConfig.addPassthroughCopy('./src/assets/blog')
+    eleventyConfig.addPassthroughCopy("utils")
     eleventyConfig.addPassthroughCopy('css')
+    eleventyConfig.addPassthroughCopy('fonts')
     // eleventyConfig.addCollection('post', function(collectionApi) {
     //     return collectionApi.getFilteredByGlob('src/articles/**/*.md')
     // })
@@ -23,14 +24,17 @@ module.exports = function(eleventyConfig) {
         return posts
     })
 
-    eleventyConfig.addPlugin(purgeCssPlugin, {
-        // Optional: Specify the location of your PurgeCSS config
-        config: "./purgecss.config.js",
-    
-        // Optional: Set quiet: true to suppress terminal output
-        quiet: false,
-      })
-    
+    // Run only in production
+    if (process.env.NODE_ENV === "production") {
+        eleventyConfig.addPlugin(purgeCssPlugin, {
+            // Optional: Specify the location of your PurgeCSS config
+            config: "./purgecss.config.js",
+        
+            // Optional: Set quiet: true to suppress terminal output
+            quiet: false,
+        })
+    }
+
     eleventyConfig.addPlugin(syntaxHighlight)
 
     eleventyConfig.addFilter("postDate", (dateObj) => {
