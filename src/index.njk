@@ -9,31 +9,19 @@ pagination:
 permalink: "{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 ---
 <!-- Section Main-Container-->
-<section
-    id="main-container" class="container-fluid">
+<section>
     <!-- Title  -->
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-sm-12">
-                <h2 class="text-uppercase">Последни Новини и Публикации</h2>
-            </div>
-            <div class="col-sm-12">
-                <div class="hr-1 mx-auto"><hr>
-                </div>
-                <p>интересни новини и истории от България и света, свободни мнения, лайфстайл, сериали, филми, субтитри, технологии,
-                    наука, програмиране</p>
-                <div class="empty_space_40"></div>
-            </div>
-        </div>
-    </div>
+    <hgroup>
+        <h2 class="text-uppercase">Последни Новини и Публикации</h2>
+        <h3>интересни новини и истории от България и света, свободни мнения, лайфстайл, сериали, филми, субтитри, технологии,
+            наука, програмиране</h3>
+    </hgroup>
     <!-- End of Title  -->
+
     <!-- Block 2 column  -->
-    <div class="container">
-        <div
-            class="row">
+    <div class="grid">
             <!-- Column Blog Posts -->
-            <div
-                class="col-md-8 my-3">
+            <div>
                 <!-- Blog-Item - 1 -->
                 {%- for post in posts -%}
                         {% include 'blog-card.njk' %}
@@ -84,13 +72,10 @@ permalink: "{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 
             <!-- End of Column Blog Posts -->
 
             <!-- Column Side Bar -->
-            <div class="col-md-4 d-md-block my-3">
+            <div class="side-bar">
                 {% include 'sidebar-categories.njk' %}
             </div>
             <!-- End Column Side Bar -->
-        </div>
-    </div>
     <!-- Block 2 column  -->
 </section>
 <!-- End of Section -->
-<div class="empty_space_40"></div>
