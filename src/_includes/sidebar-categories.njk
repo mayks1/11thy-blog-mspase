@@ -1,10 +1,10 @@
 <article>
-    <ul class="category-group">
-        <p class="category-title">Категории</p>
+    <h3 class="category-title">Категории</h3>
+    <div class="category-group">
         {%- for category in collections.categoryList -%}
-            <li>
-                <a href="/category/{{ category | slugify }}" class="list-group-item list-group-item-action">{{ category }}</a>
-            </li>
+            <span>
+                <a href="/category/{{ category | slugify }}" class="list-group-item">#{{ category }}</a>
+            </span>
         {%- endfor -%}
-    </ul>
+    </div>
 </article>
