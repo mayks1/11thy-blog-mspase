@@ -166,3 +166,14 @@
 	white-space: nowrap !important;            /* 3 */
 }
 /* End of Pagination */
+nav {
+  text-align: center;
+}
+
+nav, nav ul {
+  display: block;
+}
+
+/* #page-list {
+  flex-wrap: wrap;
+} */
