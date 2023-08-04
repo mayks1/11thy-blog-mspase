@@ -1,0 +1,36 @@
+<nav>
+    <ul>
+        <li>
+            {% if pagination.href.previous %}
+                <a class="page-link" href="{{ pagination.href.previous }}" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Предишна страница</span>
+                </a>
+            {% endif %}
+        </li>
+
+        {%- for pageEntry in pagination.pages %}
+            <li >
+                <a class="
+                        page-link
+                        page-item
+                        {% if page.url == pagination.hrefs[ loop.index0 ] %} 
+                            active
+                        {% endif %}
+                    "
+                    href="{{ pagination.hrefs[ loop.index0 ] }}">
+                    {{ loop.index }}
+                </a>
+            </li>
+        {%- endfor %}
+        
+        <li>
+            {% if pagination.href.next %}
+                <a class="page-link" href="{{ pagination.href.next }}" aria-label="следваща">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Следваща страница</span>
+                </a>
+            {% endif %}
+        </li>
+    </ul>
+</nav>

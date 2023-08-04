@@ -115,8 +115,19 @@
     -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
 /* End of Toggle Switch */
- 
+
+
 .hero-title {
   text-align: center;
 }
@@ -124,3 +135,34 @@
 .list-group-item {
   margin-right: 1rem;
 }
+
+/* Pagination */
+.page-link {
+  /* font-size: 18px; */
+  float: left;
+  margin:0px 6px;
+  padding: 6px 14px;
+  text-decoration: none;
+  border:1px solid var(--primary);
+  border-radius: var(--border-radius);
+}
+
+.active{
+  background-color: var(--primary);
+  color: var(--light)
+}
+
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+	-webkit-clip-path: inset(50%) !important;
+	clip-path: inset(50%) !important;  /* 2 */
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;            /* 3 */
+}
+/* End of Pagination */

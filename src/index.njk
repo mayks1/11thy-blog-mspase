@@ -22,51 +22,12 @@ permalink: "{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 
     <div class="grid">
             <!-- Column Blog Posts -->
             <div>
-                <!-- Blog-Item - 1 -->
                 {%- for post in posts -%}
                         {% include 'blog-card.njk' %}
                 {%- endfor -%}
-                <!-- End of Blog-Item - 1 -->
-                <div class="empty_space_40"></div>
 
                 {# Pagination #}
-
-                <nav aria-label="Page pagination">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item">
-                            {% if pagination.href.previous %}
-                                <a class="page-link" href="{{ pagination.href.previous }}" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                    <span class="sr-only">Предишна страница</span>
-                                </a>
-                            {% endif %}
-                        </li>
-
-                        {%- for pageEntry in pagination.pages %}
-                            <li 
-                                class="
-                                    page-item
-                                    {% if page.url == pagination.hrefs[ loop.index0 ] %} 
-                                        active
-                                    {% endif %}
-                                "
-                            >
-                                <a class="page-link" href="{{ pagination.hrefs[ loop.index0 ] }}">
-                                    {{ loop.index }}
-                                </a>
-                            </li>
-                        {%- endfor %}
-                        
-                        <li class="page-item">
-                            {% if pagination.href.next %}
-                                <a class="page-link" href="{{ pagination.href.next }}" aria-label="следваща">
-                                    <span aria-hidden="true">&raquo;</span>
-                                    <span class="sr-only">Следваща страница</span>
-                                </a>
-                            {% endif %}
-                        </li>
-                    </ul>
-                </nav>
+                {% include 'pagination.njk' %}
                 {# Pagination end #}
             </div>
             <!-- End of Column Blog Posts -->
