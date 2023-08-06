@@ -26,6 +26,24 @@
   font-size: 120%;
 }
 
+.post-header {
+  padding: 0;
+}
+
+.post-heading {
+  margin: 0;
+  padding: 0.7rem;
+}
+
+.post-figure {
+  margin: 0;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+}
+
 .logo {
   text-align: center;
 }

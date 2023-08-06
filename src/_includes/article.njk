@@ -1,30 +1,35 @@
 ---
 layout: 'base.njk'
 ---
-<!-- Section Main-Container-->
-<section id="main-container" class="container-fluid">
-    <div id="single-image" class="container">
-        <div class="row">
-            <!-- Column Image -->
-            <article class="col-lg-8">
-                <h1 class="h3 text-center">{{ title}}</h1>
-                <div class="empty_space_40"></div>
-                <img class="img-fluid mb-5 shadow-sm " src="{{ image }}" alt="{{ alt }}">
+<section class="post">
+ <!-- Block 2 column  -->
+    {# <div class="grid"> #}
+            <!-- Column Blog Posts -->
+            <div>
+                <article>
+                    <header class="post-header">
+                        <h1 class="post-heading text-center">{{ title}}</h1>
+                        {# <p>{{ description }}</p> #}
+                        <figure class="post-figure">
+                            <img class="post-image" src="{{ image }}" alt="{{ alt }}">
+                        </figure>
+                    </header>
+                    {{ content | safe }}
+                    <footer>
+                        <div class="date">
+                            <span class="date-icon"></span>
+                            <span>{{ date | formatDate }}</span>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+            <!-- End of Column Blog Posts -->
 
-                {{ content | safe }}
-
-                <div class="my-3">
-                    <img class="mr-3" src="/assets/images/icon-12.png" alt="icon">
-                    <span>{{ date | postDate }}</span>
-                </div>
-            </article>
             <!-- Column Side Bar -->
-            <div class="col-lg-4 d-none d-lg-block">
-                <div class="empty_space_80"></div>
-               {% include 'sidebar-categories.njk' %}
+            <div class="side-bar">
+                {% include 'sidebar.njk' %}
             </div>
             <!-- End Column Side Bar -->
-        </div>
-    </div>
+    {# </div> #}
+    <!-- Block 2 column  -->
 </section>
-<!-- End of Section -->
