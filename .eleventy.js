@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy('./src/assets/images')
     eleventyConfig.addPassthroughCopy('./src/assets/blog')
-    eleventyConfig.addPassthroughCopy("utils")
+    eleventyConfig.addPassthroughCopy("js")
     eleventyConfig.addPassthroughCopy('css')
     eleventyConfig.addPassthroughCopy('fonts')
     // eleventyConfig.addCollection('post', function(collectionApi) {

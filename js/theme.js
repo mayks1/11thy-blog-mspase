@@ -1,6 +1,5 @@
 var theme = localStorage.getItem("theme")
 var logo = document.getElementById("logo")
-console.log(logo)
 
 if (!theme) {
    localStorage.setItem("theme", "dark")
