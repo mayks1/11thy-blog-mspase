@@ -12,8 +12,8 @@ permalink: "{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 
 <section>
     <!-- Title  -->
     <hgroup class="hero-title">
-        <h2 class="text-uppercase">Последни Новини и Публикации</h2>
-        <h3>интересни новини и истории от България и света, свободни мнения, лайфстайл, сериали, филми, субтитри, технологии,
+        <h1 class="text-uppercase">Последни Новини и Публикации</h2>
+        <h2>интересни новини и истории от България и света, свободни мнения, лайфстайл, сериали, филми, субтитри, технологии,
             наука, програмиране</h3>
     </hgroup>
     <!-- End of Title  -->
@@ -30,8 +30,7 @@ permalink: "{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 
 
             <!-- Column Side Bar -->
             <div class="side-bar">
-                {% include 'sidebar-categories.njk' %}
-                {% include 'sidebar-ads.njk' %}
+                {% include 'sidebar.njk' %}
             </div>
             <!-- End Column Side Bar -->
     </div>
