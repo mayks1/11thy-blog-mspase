@@ -16,7 +16,7 @@ date: 2022-05-27
 
 ## Сериалът - From - е един от най добрите сериали за 2022 г.
 
-{% youtube "https://www.youtube.com/embed/pDHqAj4eJcM?controls=0" %}
+https://www.youtube.com/embed/pDHqAj4eJcM?controls=0
 
 Премиерата на поредицата на From е най-гледаната премиера на оригиналния сериал на Epix в историята на мрежата, собственост на Amazon. Това вторият най-гледан сериал на Epix след спечелили я награда "Еми", Кръстникът на Харлем ([Godfather of Harlem](https://www.imdb.com/title/tt8080122/)).
 

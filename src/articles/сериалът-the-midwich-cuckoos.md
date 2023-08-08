@@ -15,7 +15,7 @@ number: 8
 date: 2022-06-03
 ---
 
-{% youtube "https://www.youtube.com/embed/WCS4v711yck" %}
+https://www.youtube.com/embed/WCS4v711yck
 
 ## The Midwich Cuckoos е английски фантастичен сериал.
 

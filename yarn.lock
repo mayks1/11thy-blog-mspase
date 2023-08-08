@@ -24,6 +24,16 @@
     ssri "^8.0.1"
     ws "^8.13.0"
 
+"@11ty/eleventy-fetch@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-fetch/-/eleventy-fetch-4.0.0.tgz#500d69b9ec336d8e4fd1e618cabb9a262c7a333f"
+  integrity sha512-wGAd0r+8DUWr22fK5r07dOKuNY6ltA7hX+sJzngGZL1yJmuUVdM/xPQZ+iq0BFgf/ZeRdpVEzf2D0cpVZUuiTg==
+  dependencies:
+    debug "^4.3.4"
+    flat-cache "^3.0.4"
+    node-fetch "^2.6.7"
+    p-queue "^6.6.2"
+
 "@11ty/eleventy-plugin-syntaxhighlight@^5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@11ty/eleventy-plugin-syntaxhighlight/-/eleventy-plugin-syntaxhighlight-5.0.0.tgz#dc1c43427624a5326f5dda0fe8fbe3805225fdb8"
@@ -419,6 +429,11 @@ debug@^4.3.4:
   dependencies:
     ms "2.1.2"
 
+deepmerge@^4.3.0:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.3.1.tgz#44b5f2147cd3b00d4b56137685966f26fd25dd4a"
+  integrity sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==
+
 dependency-graph@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/dependency-graph/-/dependency-graph-0.11.0.tgz#ac0ce7ed68a54da22165a85e97a01d53f5eb2e27"
@@ -476,10 +491,61 @@ ejs@^3.1.9:
   dependencies:
     jake "^10.8.5"
 
-eleventy-plugin-blog-tools@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/eleventy-plugin-blog-tools/-/eleventy-plugin-blog-tools-0.4.1.tgz#0bb149f2a703abbc8fa4153a14a917ce98082707"
-  integrity sha512-XzmgmoOMbOp+GJPRD86acfTcUyaiITOtjAe2vSXpXWb7lr1x2yu7nl+PhHFuDAnriGe+Aj0OGg3Vq1jHzEmJDw==
+eleventy-plugin-embed-everything@^1.16.0:
+  version "1.16.0"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-embed-everything/-/eleventy-plugin-embed-everything-1.16.0.tgz#3a0cbeb1d7c460d691190779d9441d198d08c12d"
+  integrity sha512-IN/SEUBSmpwbhdazctiNQszTWWovAaHEWTD/sn4MKTo96TPg4uxuUH+5gJXB+laSsTpQeAkQN0IUORZxdr4yYQ==
+  dependencies:
+    deepmerge "^4.3.0"
+    eleventy-plugin-embed-instagram "^1.2.7"
+    eleventy-plugin-embed-soundcloud "^1.2.7"
+    eleventy-plugin-embed-spotify "^1.2.7"
+    eleventy-plugin-embed-ted "^1.0.0"
+    eleventy-plugin-embed-tiktok "^1.1.7"
+    eleventy-plugin-embed-twitch "^1.2.7"
+    eleventy-plugin-embed-twitter "^1.3.7"
+    eleventy-plugin-vimeo-embed "^1.3.7"
+    eleventy-plugin-youtube-embed "^1.9.0"
+
+eleventy-plugin-embed-instagram@^1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-embed-instagram/-/eleventy-plugin-embed-instagram-1.2.7.tgz#c9487a8a8f192dbf10e8fd33986aa8e3f19b6f0d"
+  integrity sha512-v6uSqeZiZU5L40lr4NTGBr+2Wbc81SqbNIllESEBQDFhS68g253WqkLaNs7gGh0k5hxhNuMt7ZZEBfous7jksw==
+
+eleventy-plugin-embed-soundcloud@^1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-embed-soundcloud/-/eleventy-plugin-embed-soundcloud-1.2.7.tgz#7ead5013f0802ba3839acf979e76472e7921058c"
+  integrity sha512-0+VNeEcMiRySmyTmPmMhCwkbds44k9W4jWqUwjvk665TRagiXcCdj/BK2wl8vyiVrn/0arWeSCpol4NBb6BIvA==
+  dependencies:
+    "@11ty/eleventy-fetch" "^4.0.0"
+
+eleventy-plugin-embed-spotify@^1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-embed-spotify/-/eleventy-plugin-embed-spotify-1.2.7.tgz#fa91bd68c9b73c31d3c98f4dc2735dc7591b7832"
+  integrity sha512-CeybeLjIvZYAccByFsSl8Nrlh1F28aX0C+JvNPDsrPh1m0iJaKsm/8l7cebf2y9pA47y38D4XrGFIO8WoPx2sQ==
+
+eleventy-plugin-embed-ted@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-embed-ted/-/eleventy-plugin-embed-ted-1.0.0.tgz#5f4cbcff867548d83f97c6cc7b226e2ddd405a82"
+  integrity sha512-IOI9/nm4POAZbP4rnff77grKWxRGe2gYDfRBsDJwCn12ihNlfWTtg8o+a1E55nUb1xz1tvk/L9g98usMF6eqwg==
+
+eleventy-plugin-embed-tiktok@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-embed-tiktok/-/eleventy-plugin-embed-tiktok-1.1.7.tgz#43607445dddf7147b6f505067ad9b5244fa918af"
+  integrity sha512-Yb/95hafIsKVsV11ebsX0PoYzpLQWWSbdznbvPfA0HIKjfTHGEt1q0XX5DRGPnn5tor7lM5sha9DMQPzJb/oGQ==
+
+eleventy-plugin-embed-twitch@^1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-embed-twitch/-/eleventy-plugin-embed-twitch-1.2.7.tgz#a64d7ced9bcdc130475c8d0d1753ac87d0ca0c76"
+  integrity sha512-E3oUtk5HhfgBaH9xpcnnByoddyyxuj0uhTzxD+UF5ftUU4pa0959HADBI1RuWUDssADzowpSes8m2gBgO4Peeg==
+
+eleventy-plugin-embed-twitter@^1.3.7:
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-embed-twitter/-/eleventy-plugin-embed-twitter-1.3.7.tgz#dcf69290aedede60a16c51f7ec87c0a4c1ad9e11"
+  integrity sha512-cl2MuEqSHGhVwiA+rR6Wn8FwLIKYL0lpTL9TjXBXrBCNr5eTUGkN6odO/vRrUY4HY79THugoziWuhVkIx2UVeg==
+  dependencies:
+    "@11ty/eleventy-fetch" "^4.0.0"
+    deepmerge "^4.3.0"
 
 eleventy-plugin-purgecss@^0.4.0:
   version "0.4.0"
@@ -492,6 +558,19 @@ eleventy-plugin-reading-time@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/eleventy-plugin-reading-time/-/eleventy-plugin-reading-time-0.0.1.tgz#e57c85aa26e9d055b3beca2809c650099ecaa610"
   integrity sha512-6MRHwrWMYm/u9lJK4/mnyS+6SyQxJSQcTfa1DqQS9fpQRPsZ9mdO9rZ/6DAhZpX2/cXxrbc6qxgcv6Qj90im1g==
+
+eleventy-plugin-vimeo-embed@^1.3.7:
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-vimeo-embed/-/eleventy-plugin-vimeo-embed-1.3.7.tgz#b62aedf9782dc3a6aba0271f8805c17d31e79723"
+  integrity sha512-uH1iiUGgDPXD8/b/43gvJ0TX8PIvwO9L0fU8vmp2X4FJK+SERNnk7uP0G8pHg1x+1H7A1KWnu/sric5MtsMGeQ==
+
+eleventy-plugin-youtube-embed@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-youtube-embed/-/eleventy-plugin-youtube-embed-1.9.0.tgz#4ade03208b5721b3456cc5cfe9c7a48fa5aca49e"
+  integrity sha512-jrFaYk8mgzI96iGixZlWk404/y+VBSEIMOmOEnmfumP35XGguACW+433ms4xYDbhM/Aa+Q/gKoQP4NbSX5kUHg==
+  dependencies:
+    deepmerge "^4.3.0"
+    lite-youtube-embed "^0.2.0"
 
 encodeurl@~1.0.2:
   version "1.0.2"
@@ -534,6 +613,11 @@ esprima@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
   integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
+
+eventemitter3@^4.0.4:
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
+  integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
 
 extend-shallow@^2.0.1:
   version "2.0.1"
@@ -586,6 +670,19 @@ finalhandler@^1.2.0:
     parseurl "~1.3.3"
     statuses "2.0.1"
     unpipe "~1.0.0"
+
+flat-cache@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/flat-cache/-/flat-cache-3.0.4.tgz#61b0338302b2fe9f957dcc32fc2a87f1c3048b11"
+  integrity sha512-dm9s5Pw7Jc0GvMYbshN6zchCA9RgQlzzEZX3vylR9IqFfS8XciblUXOKfW6SiuJ0e13eDYZoZV5wdrev7P3Nwg==
+  dependencies:
+    flatted "^3.1.0"
+    rimraf "^3.0.2"
+
+flatted@^3.1.0:
+  version "3.2.7"
+  resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
+  integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
 fs.realpath@^1.0.0:
   version "1.0.0"
@@ -886,6 +983,11 @@ list-to-array@^1.1.0:
   resolved "https://registry.yarnpkg.com/list-to-array/-/list-to-array-1.1.0.tgz#ca7dff640606433cac75cbe8446acd864b15bf6f"
   integrity sha512-+dAZZ2mM+/m+vY9ezfoueVvrgnHIGi5FvgSymbIgJOFwiznWyA59mav95L+Mc6xPtL3s9gm5eNTlNtxJLbNM1g==
 
+lite-youtube-embed@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/lite-youtube-embed/-/lite-youtube-embed-0.2.0.tgz#db95eab9dd448f02e83de906383350a8033d54fe"
+  integrity sha512-XXXAk5sbvtjjwbie3XG+6HppgTm1HTGL/Uk9z9NkJH53o7puZLur434heHzAjkS60hZB3vT4ls25zl5rMiX4EA==
+
 lodash.deburr@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/lodash.deburr/-/lodash.deburr-4.1.0.tgz#ddb1bbb3ef07458c0177ba07de14422cb033ff9b"
@@ -1026,6 +1128,13 @@ neo-async@^2.6.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
+node-fetch@^2.6.7:
+  version "2.6.12"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.12.tgz#02eb8e22074018e3d5a83016649d04df0e348fba"
+  integrity sha512-C/fGU2E8ToujUivIO0H+tpQ6HWo4eEmchoPIoXtxCrVghxdKq+QOHqEZW7tuP3KlV3bC8FRMO5nMCC7Zm1VP6g==
+  dependencies:
+    whatwg-url "^5.0.0"
+
 normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
@@ -1058,6 +1167,26 @@ once@^1.3.0:
   integrity sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==
   dependencies:
     wrappy "1"
+
+p-finally@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/p-finally/-/p-finally-1.0.0.tgz#3fbcfb15b899a44123b34b6dcc18b724336a2cae"
+  integrity sha512-LICb2p9CB7FS+0eR1oqWnHhp0FljGLZCWBE9aix0Uye9W8LTQPwMTYVGWQWIw9RdQiDg4+epXQODwIYJtSJaow==
+
+p-queue@^6.6.2:
+  version "6.6.2"
+  resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-6.6.2.tgz#2068a9dcf8e67dd0ec3e7a2bcb76810faa85e426"
+  integrity sha512-RwFpb72c/BhQLEXIZ5K2e+AhgNVmIejGlTgiB9MzZ0e93GRvqZ7uSi0dvRF7/XIXDeNkra2fNHBxTyPDGySpjQ==
+  dependencies:
+    eventemitter3 "^4.0.4"
+    p-timeout "^3.2.0"
+
+p-timeout@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/p-timeout/-/p-timeout-3.2.0.tgz#c7e17abc971d2a7962ef83626b35d635acf23dfe"
+  integrity sha512-rhIwUycgwwKcP9yTOOFK/AKsAopjjCakVqLHePO3CC6Mir1Z99xT+R63jZxAT5lFZLa2inS5h+ZS2GvR99/FBg==
+  dependencies:
+    p-finally "^1.0.0"
 
 parse-srcset@^1.0.2:
   version "1.0.2"
@@ -1345,6 +1474,13 @@ rimraf@^2.7.1:
   dependencies:
     glob "^7.1.3"
 
+rimraf@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-3.0.2.tgz#f1a5402ba6220ad52cc1282bac1ae3aa49fd061a"
+  integrity sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==
+  dependencies:
+    glob "^7.1.3"
+
 run-parallel@^1.1.9:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/run-parallel/-/run-parallel-1.2.0.tgz#66d1368da7bdf921eb9d95bd1a9229e7f21a43ee"
@@ -1455,6 +1591,11 @@ token-stream@1.0.0:
   resolved "https://registry.yarnpkg.com/token-stream/-/token-stream-1.0.0.tgz#cc200eab2613f4166d27ff9afc7ca56d49df6eb4"
   integrity sha512-VSsyNPPW74RpHwR8Fc21uubwHY7wMDeJLys2IX5zJNih+OnAnaifKHo+1LHT7DAdloQ7apeaaWg8l7qnf/TnEg==
 
+tr46@~0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
+  integrity sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
+
 uc.micro@^1.0.1, uc.micro@^1.0.5:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/uc.micro/-/uc.micro-1.0.6.tgz#9c411a802a409a91fc6cf74081baba34b24499ac"
@@ -1479,6 +1620,19 @@ void-elements@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-3.1.0.tgz#614f7fbf8d801f0bb5f0661f5b2f5785750e4f09"
   integrity sha512-Dhxzh5HZuiHQhbvTW9AMetFfBHDMYpo23Uo9btPXgdYP+3T5S+p+jgNy7spra+veYhBP2dCSgxR/i2Y02h5/6w==
+
+webidl-conversions@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
+  integrity sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==
+
+whatwg-url@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
+  integrity sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==
+  dependencies:
+    tr46 "~0.0.3"
+    webidl-conversions "^3.0.0"
 
 which@^2.0.1:
   version "2.0.2"
