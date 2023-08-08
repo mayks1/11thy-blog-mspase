@@ -3,7 +3,8 @@ node_modules
 
 # build artefacts
 _site
-
+# GULP
+gulp
 # secrets and errors
 .env
 .log

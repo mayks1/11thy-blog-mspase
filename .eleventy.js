@@ -23,17 +23,14 @@ module.exports = function(eleventyConfig) {
     })
 
     // Run only in production
-    if (process.env.NODE_ENV === "production") {
-        eleventyConfig.addPlugin(purgeCssPlugin, {
-            // Optional: Specify the location of your PurgeCSS config
-            config: "./purgecss.config.js",
-        
-            // Optional: Set quiet: true to suppress terminal output
-            quiet: false,
-        })
 
-        eleventyConfig.addPlugin(lazyImagesPlugin)
-    }
+    eleventyConfig.addPlugin(purgeCssPlugin, {
+        config: "./purgecss.config.js",
+        quiet: false,
+    })
+
+    eleventyConfig.addPlugin(lazyImagesPlugin)
+
         
     eleventyConfig.addPlugin(embedEverything)
     eleventyConfig.addPlugin(syntaxHighlight)
