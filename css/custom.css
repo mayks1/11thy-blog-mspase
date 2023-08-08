@@ -54,11 +54,17 @@
   margin: 1.5rem 0;
 }
 
-.date {
+.post-info {
   margin-top: 10px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
+
+.post-info .date {
+  display: flex;
+  align-items: center;
+} 
 
 .date-icon {
     margin-right: 0.5rem;

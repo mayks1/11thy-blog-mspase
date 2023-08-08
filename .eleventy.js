@@ -1,6 +1,7 @@
 const { DateTime } = require('luxon')
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
 const purgeCssPlugin = require("eleventy-plugin-purgecss")
+const readingTime = require('eleventy-plugin-reading-time')
 
 module.exports = function(eleventyConfig) {
 
@@ -36,6 +37,7 @@ module.exports = function(eleventyConfig) {
     }
 
     eleventyConfig.addPlugin(syntaxHighlight)
+    eleventyConfig.addPlugin(readingTime)
 
     eleventyConfig.addFilter("formatDate", (value) => {
         const date = new Date(value)

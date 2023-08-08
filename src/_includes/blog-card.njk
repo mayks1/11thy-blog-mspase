@@ -14,9 +14,12 @@
             </div>
         </div>
         <div>
-            <div class="date">
-                <span class="date-icon"></span>
-                <span>{{ post.data.date | formatDate }}</span>
+            <div class="post-info">
+                <div class="date">
+                    <span class="date-icon"></span>
+                    <span>{{ post.data.date | formatDate }}</span>
+                </div>
+                <span>{{ post.content | readingTime }} време за четене.</span>
             </div>
         </div>
     <footer>
