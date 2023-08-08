@@ -15,9 +15,7 @@ date: 2022-06-05
 status: publish
 ---
 
-<div class="video">
-  <video-player src="https://www.youtube.com/embed/s9U7-ITrNn0" />
-</div>
+{% youtube "https://www.youtube.com/embed/s9U7-ITrNn0" %}
 
 ## Row 19 / Ред 19 - Руски игрален филм
 

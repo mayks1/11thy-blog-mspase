@@ -5,6 +5,9 @@
 /* Import Fonts */
 @import "font-face.css";
 
+/* Import syntaxHighlight CSS */
+@import "prism.css";
+
 :root {
     --font-family: "PT Sans";
     --primary: #f4511e;

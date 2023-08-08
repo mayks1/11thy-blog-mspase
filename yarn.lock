@@ -476,6 +476,11 @@ ejs@^3.1.9:
   dependencies:
     jake "^10.8.5"
 
+eleventy-plugin-blog-tools@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/eleventy-plugin-blog-tools/-/eleventy-plugin-blog-tools-0.4.1.tgz#0bb149f2a703abbc8fa4153a14a917ce98082707"
+  integrity sha512-XzmgmoOMbOp+GJPRD86acfTcUyaiITOtjAe2vSXpXWb7lr1x2yu7nl+PhHFuDAnriGe+Aj0OGg3Vq1jHzEmJDw==
+
 eleventy-plugin-purgecss@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/eleventy-plugin-purgecss/-/eleventy-plugin-purgecss-0.4.0.tgz#5374897eab62435056a580ce9b809acaa24a0932"

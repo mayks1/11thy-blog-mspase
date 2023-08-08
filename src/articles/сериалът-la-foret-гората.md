@@ -31,9 +31,7 @@ date: 2022-05-25
 - [Suzanne Clément](https://www.imdb.com/name/nm0167501/?ref_=tt_ov_st)
 - [Alexia Barlier](https://www.imdb.com/name/nm1715145/?ref_=tt_ov_st)
 
-<div class="video">
-  <video-player src="https://www.youtube.com/embed/0KGIwqRlgQ8" />
-</div>
+{% youtube "https://www.youtube.com/embed/0KGIwqRlgQ8" %}
 
 #### Сюжет:
 

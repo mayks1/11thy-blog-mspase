@@ -1,4 +1,5 @@
-const { DateTime } = require('luxon')
+// const { DateTime } = require('luxon')
+const blogTools = require("eleventy-plugin-blog-tools")
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
 const purgeCssPlugin = require("eleventy-plugin-purgecss")
 const readingTime = require('eleventy-plugin-reading-time')
@@ -36,6 +37,7 @@ module.exports = function(eleventyConfig) {
         })
     }
 
+    eleventyConfig.addPlugin(blogTools)
     eleventyConfig.addPlugin(syntaxHighlight)
     eleventyConfig.addPlugin(readingTime)
 
