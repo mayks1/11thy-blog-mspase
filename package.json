@@ -7,6 +7,7 @@
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "eleventy-plugin-embed-everything": "^1.16.0",
+    "eleventy-plugin-lazyimages": "^2.1.2",
     "eleventy-plugin-reading-time": "^0.0.1"
   },
   "scripts": {
