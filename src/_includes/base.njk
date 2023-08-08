@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="/css/custom.css">
+    {# <link rel="stylesheet" href="../assets/css/custom.css"> #}
+    <link rel="stylesheet" href="./assets/css/custom.css">
     {% block head %}{% endblock %}
     <title>{{ title }}</title>
 </head>
@@ -15,6 +16,6 @@
         {{ content | safe }}
         {% include 'footer.njk' %}
     </main>
-<script type="text/javascript" src="../../js/theme.js"></script>
+<script type="text/javascript" src="./assets/js/theme.js"></script>
 </body>
 </html>

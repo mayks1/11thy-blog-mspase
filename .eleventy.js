@@ -7,13 +7,9 @@ const readingTime = require('eleventy-plugin-reading-time')
 module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy('./src/assets/images')
-    eleventyConfig.addPassthroughCopy('./src/assets/blog')
-    eleventyConfig.addPassthroughCopy("js")
-    eleventyConfig.addPassthroughCopy('css')
-    eleventyConfig.addPassthroughCopy('fonts')
-    // eleventyConfig.addCollection('post', function(collectionApi) {
-    //     return collectionApi.getFilteredByGlob('src/articles/**/*.md')
-    // })
+    eleventyConfig.addPassthroughCopy('./src/assets/css')
+    eleventyConfig.addPassthroughCopy("./src/assets/js")
+    eleventyConfig.addPassthroughCopy('./src/assets/fonts')
 
     eleventyConfig.addCollection('publishedPosts', (collectionApi) => {
         let posts = collectionApi
@@ -35,9 +31,10 @@ module.exports = function(eleventyConfig) {
             // Optional: Set quiet: true to suppress terminal output
             quiet: false,
         })
-    }
 
-    eleventyConfig.addPlugin(lazyImagesPlugin)
+        eleventyConfig.addPlugin(lazyImagesPlugin)
+    }
+        
     eleventyConfig.addPlugin(embedEverything)
     eleventyConfig.addPlugin(syntaxHighlight)
     eleventyConfig.addPlugin(readingTime)
