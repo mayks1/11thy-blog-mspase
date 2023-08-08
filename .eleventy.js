@@ -46,7 +46,6 @@ module.exports = function(eleventyConfig) {
         const date = new Date(value)
         return date.toLocaleString('bg-BG', { dateStyle: 'medium' })
     })
-    
 
     eleventyConfig.addCollection('categoryList', collectionApi => {
 
