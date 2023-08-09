@@ -24,12 +24,12 @@ module.exports = function(eleventyConfig) {
 
     // Run only in production
 
-    eleventyConfig.addPlugin(purgeCssPlugin, {
-        config: "./purgecss.config.js",
-        quiet: false,
-    })
+    // eleventyConfig.addPlugin(purgeCssPlugin, {
+    //     config: "./purgecss.config.js",
+    //     quiet: false,
+    // })
 
-    eleventyConfig.addPlugin(lazyImagesPlugin)
+    // eleventyConfig.addPlugin(lazyImagesPlugin)
 
         
     eleventyConfig.addPlugin(embedEverything)

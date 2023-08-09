@@ -16,6 +16,15 @@
     --link-hover: rgb(24, 94, 82);
 }
 
+html {
+  --logo: url(/assets/images/logo/mspase-logo.png) no-repeat;
+
+}
+
+html[data-theme="light"] {
+  --logo: url(/assets/images/logo/mspase-logo-dark.png) no-repeat;
+}
+
 body {
   font-family: "PT Sans";
 }
@@ -58,6 +67,17 @@ body {
 
 .logo {
   text-align: center;
+}
+
+#logo {
+  /* display: block;
+  -moz-box-sizing: border-box; */
+  box-sizing: border-box;
+  background:var(--logo) no-repeat;
+  background-position: center;
+  background-size: 160px;
+  height: 100px;
+  padding-left: 100px;
 }
 
 .nav-bar {
