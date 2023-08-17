@@ -1,12 +1,3 @@
-/* @import url("pico.css"); */
-@import "pico.css";
-
-/* Import Fonts */
-@import "font-face.css";
-
-/* Import syntaxHighlight CSS */
-@import "prism.css";
-
 :root {
     --font-family: "PT Sans";
     --primary: #f4511e;
@@ -17,12 +8,12 @@
 }
 
 html {
-  --logo: url(/assets/images/logo/mspase-logo.png) no-repeat;
+  --logo: url(/images/logo/mspase-logo.png) no-repeat;
 
 }
 
 html[data-theme="light"] {
-  --logo: url(/assets/images/logo/mspase-logo-dark.png) no-repeat;
+  --logo: url(/images/logo/mspase-logo-dark.png) no-repeat;
 }
 
 body {

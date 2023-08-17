@@ -1,15 +1,21 @@
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
+// This Eleventy plugin will automatically embed common media formats
+// in your pages, requiring only a URL in your markdown files.
+// It currently supports Instagram, SoundCloud, Spotify, TikTok, 
+// Twitch, Twitter, Vimeo, and YouTube, with more planned.
 const embedEverything = require("eleventy-plugin-embed-everything")
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
+const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss")
 const purgeCssPlugin = require("eleventy-plugin-purgecss")
 const readingTime = require('eleventy-plugin-reading-time')
 
+const isProd = process.env.ELEVENTY_ENV === "production"
+
 module.exports = function(eleventyConfig) {
 
-    eleventyConfig.addPassthroughCopy('./src/assets/images')
-    eleventyConfig.addPassthroughCopy('./src/assets/css')
-    eleventyConfig.addPassthroughCopy("./src/assets/js")
-    eleventyConfig.addPassthroughCopy('./src/assets/fonts')
+    eleventyConfig.addPassthroughCopy('./src/images')
+    eleventyConfig.addPassthroughCopy('./src/fonts')
+    eleventyConfig.addPassthroughCopy("./src/favicon.png")
 
     eleventyConfig.addCollection('publishedPosts', (collectionApi) => {
         let posts = collectionApi
@@ -22,18 +28,20 @@ module.exports = function(eleventyConfig) {
         return posts
     })
 
+
     // Run only in production
-
-    // eleventyConfig.addPlugin(purgeCssPlugin, {
-    //     config: "./purgecss.config.js",
-    //     quiet: false,
-    // })
-
-    // eleventyConfig.addPlugin(lazyImagesPlugin)
-
-        
+    if (isProd) {
+        eleventyConfig.addPlugin(purgeCssPlugin, {
+            config: "./purgecss.config.js",
+            quiet: false,
+        })
+    
+        eleventyConfig.addPlugin(lazyImagesPlugin)
+    }
+    
     eleventyConfig.addPlugin(embedEverything)
     eleventyConfig.addPlugin(syntaxHighlight)
+    eleventyConfig.addPlugin(eleventySass)
     eleventyConfig.addPlugin(readingTime)
 
     eleventyConfig.addFilter("formatDate", (value) => {
