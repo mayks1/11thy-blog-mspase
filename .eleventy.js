@@ -31,10 +31,10 @@ module.exports = function(eleventyConfig) {
 
     // Run only in production
     if (isProd) {
-        eleventyConfig.addPlugin(purgeCssPlugin, {
-            config: "./purgecss.config.js",
-            quiet: false,
-        })
+        // eleventyConfig.addPlugin(purgeCssPlugin, {
+        //     config: "./purgecss.config.js",
+        //     quiet: false,
+        // })
     
         eleventyConfig.addPlugin(lazyImagesPlugin)
     }
