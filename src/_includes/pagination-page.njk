@@ -9,15 +9,19 @@
 					<a href="{{ previousPost.url | url }}">
 						<span aria-hidden="true">&laquo;</span>
 						{# {{ previousPost.data.title }} #}
-						предишна страница
+						предишна
 					</a>
 				{%- endif -%}
 			</li>
-			<li class="list-item"><span>|</span></li>
+
+			{%- if (previousPost) and (nextPost) %}
+				<li class="list-item"><span>|</span></li>
+			{%- endif -%}
+
 			<li class="list-item">
 				{%- if nextPost -%}
 					<a href="{{ nextPost.url | url }}">
-						следваща страница
+						следваща
 						<span aria-hidden="true">&raquo;</span>
 						{# {{ nextPost.data.title }} #}
 					</a>
