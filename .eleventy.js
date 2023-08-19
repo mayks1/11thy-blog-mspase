@@ -1,4 +1,5 @@
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
+const pluginRss = require("@11ty/eleventy-plugin-rss")
 // This Eleventy plugin will automatically embed common media formats
 // in your pages, requiring only a URL in your markdown files.
 // It currently supports Instagram, SoundCloud, Spotify, TikTok, 
@@ -39,6 +40,7 @@ module.exports = function(eleventyConfig) {
         eleventyConfig.addPlugin(lazyImagesPlugin)
     }
     
+    eleventyConfig.addPlugin(pluginRss)
     eleventyConfig.addPlugin(embedEverything)
     eleventyConfig.addPlugin(syntaxHighlight)
     eleventyConfig.addPlugin(eleventySass)
