@@ -1,11 +1,7 @@
----
-permalink: /robots.txt
----
 User-agent: *
 Allow: /
 Disallow:
 
 Host: https://11-mspase.netlify.app
 
-Sitemap: process.env.URL/sitemap.xml
-
+Sitemap: https://11-mspase.netlify.app/sitemap.xml

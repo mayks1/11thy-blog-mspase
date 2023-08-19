@@ -17,6 +17,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('./src/images')
     eleventyConfig.addPassthroughCopy('./src/fonts')
     eleventyConfig.addPassthroughCopy("./src/favicon.png")
+    // Put robots.txt in root
+    eleventyConfig.addPassthroughCopy({ 'src/robots.txt': '/robots.txt' })
 
     eleventyConfig.addCollection('publishedPosts', (collectionApi) => {
         let posts = collectionApi
