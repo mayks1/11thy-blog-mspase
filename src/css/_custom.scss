@@ -200,6 +200,11 @@ body {
 }
 
 /* Pagination */
+.pagination-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .page-link {
   /* font-size: 18px; */
   float: left;

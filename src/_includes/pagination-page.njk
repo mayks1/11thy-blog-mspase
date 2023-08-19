@@ -1,0 +1,29 @@
+{%- set nextPost = collections.publishedPosts | getNextCollectionItem(page) -%}
+{%- set previousPost = collections.publishedPosts | getPreviousCollectionItem(page) -%}
+{%- if nextPost or previousPost -%}
+	<nav>
+		<ul class="pagination-list">
+
+			<li class="list-item">
+				{%- if previousPost %}
+					<a href="{{ previousPost.url | url }}">
+						<span aria-hidden="true">&laquo;</span>
+						{# {{ previousPost.data.title }} #}
+						предишна страница
+					</a>
+				{%- endif -%}
+			</li>
+			<li class="list-item"><span>|</span></li>
+			<li class="list-item">
+				{%- if nextPost -%}
+					<a href="{{ nextPost.url | url }}">
+						следваща страница
+						<span aria-hidden="true">&raquo;</span>
+						{# {{ nextPost.data.title }} #}
+					</a>
+				{%- endif -%}
+			</li>
+
+		</ul>
+	</nav>
+{%- endif -%}
