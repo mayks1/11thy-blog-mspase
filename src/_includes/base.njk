@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html id="theme" data-theme="dark" lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="{{ '/css/style.css' | url }}" rel="stylesheet" />
-    {% block head %}{% endblock %}
-    <title>{{ title }}</title>
-</head>
-<body>
+{% include "widgets/head.njk" %}
     <main class="container">
         {% include 'header.njk' %}
         {{ content | safe }}
         {% include 'footer.njk' %}
     </main>
-<script src="{{ '/assets/scripts/main.js' | url }}" defer></script>
-</body>
-</html>
+{% include "widgets/script.njk" %}

@@ -4,6 +4,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss")
 // in your pages, requiring only a URL in your markdown files.
 // It currently supports Instagram, SoundCloud, Spotify, TikTok, 
 // Twitch, Twitter, Vimeo, and YouTube, with more planned.
+
 const embedEverything = require("eleventy-plugin-embed-everything")
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
 const eleventySass = require("@11tyrocks/eleventy-plugin-sass-lightningcss")
@@ -41,7 +42,7 @@ module.exports = function(eleventyConfig) {
     
         eleventyConfig.addPlugin(lazyImagesPlugin)
     }
-    
+
     eleventyConfig.addPlugin(pluginRss)
     eleventyConfig.addPlugin(embedEverything)
     eleventyConfig.addPlugin(syntaxHighlight)
