@@ -8,6 +8,7 @@ module.exports = {
     subtitle: "Блог за авторски материали, новини, интересни истории",
     path: "/feed/feed.xml",
     id: process.env.URL || "http://localhost:8080",
+    filename: (process.env.URL || "http://localhost:8080") + "/feed/feed.xml"
   },
   jsonfeed: {
     path: "/feed/feed.json",
