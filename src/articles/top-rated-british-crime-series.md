@@ -1,7 +1,7 @@
 ---
 title: Top rated British crime series
 description: List of Top Rated British Crime TV Shows according to IMDB.COM
-image: https://www.pbs.org/wgbh/masterpiece/wp-content/uploads/2018/06/masterpiece-mysteries-to-stream-1920x1080-compressed.jpg
+image: https://res.cloudinary.com/mayks/image/upload/v1692695390/blog-mayks/movies/top-brit-crime-series/masterpiece-mysteries-to-stream-1920x1080-compressed_ul7734.jpg
 alt: British crime series
 lang: en
 tags:
