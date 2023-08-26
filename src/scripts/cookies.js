@@ -20,4 +20,4 @@ const executeCodes = () => {
 };
 
 //executeCodes function will be called on webpage load
-window.addEventListener("load", executeCodes);
+window.addEventListener("load", setTimeout(executeCodes,10000));
