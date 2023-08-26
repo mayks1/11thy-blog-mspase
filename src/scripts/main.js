@@ -1,2 +1,3 @@
+import './cookies'
 import './theme'
 
