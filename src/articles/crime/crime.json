@@ -1,0 +1,5 @@
+{
+    "permalink": "articles/crime/{{ page.fileSlug  }}/",
+    "layout": "article.njk",
+    "tags": "post"
+}

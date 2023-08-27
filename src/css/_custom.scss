@@ -57,6 +57,13 @@ body {
   height: auto;
 }
 
+.post-info {
+  margin-top: 10px;
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
   text-align: center;
 }
@@ -76,13 +83,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   margin: 1.5rem 0;
-}
-
-.post-info {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .date {

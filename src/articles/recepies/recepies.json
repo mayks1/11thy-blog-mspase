@@ -1,0 +1,5 @@
+{
+    "permalink": "articles/recepies/{{ page.fileSlug  }}/",
+    "layout": "article.njk",
+    "tags": "post"
+}

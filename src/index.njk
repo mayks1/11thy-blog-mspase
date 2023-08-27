@@ -23,8 +23,10 @@ permalink: "{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 
             <!-- Column Blog Posts -->
             <div>
                 {%- for post in posts -%}
-                        {% include 'blog-card.njk' %}
+                    {% include 'blog-card.njk' %}
                 {%- endfor -%}
+
+                {% include 'pagination.njk' %}
             </div>
             <!-- End of Column Blog Posts -->
 
@@ -36,7 +38,7 @@ permalink: "{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 
     </div>
     <!-- Block 2 column  -->
 
-    {% include 'pagination.njk' %}
+    
 
 </section>
 <!-- End of Section -->

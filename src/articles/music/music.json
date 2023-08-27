@@ -1,0 +1,5 @@
+{
+    "permalink": "articles/music/{{ page.fileSlug  }}/",
+    "layout": "article.njk",
+    "tags": "post"
+}

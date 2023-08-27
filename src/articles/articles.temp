@@ -1,5 +1,5 @@
 {
-    "permalink": "articles/{{ title | slug }}/",
+    "permalink": "articles/{{ title | slugify }}/",
     "layout": "article.njk",
     "tags": "post" 
 }
